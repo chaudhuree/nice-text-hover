@@ -1,0 +1,23 @@
+.main span {
+    line-height: 1.25;
+}
+.main > span {
+    color: #333;
+    text-decoration: underline;
+    background-size: calc(200% + 1px);
+    background-position-x: 0%;
+    background-image: linear-gradient(to right, transparent 50%, rgba(75, 230, 253, 0.5) 50%);
+    background-clip: content-box;
+    transition: background-position-x 250ms ease-in-out;
+}
+
+.main > span:visited {
+  color: #4d4d4d;
+}
+.main > span:hover, .main > span:focus {
+  background-position-x: -100%;
+  transition: background-position-x 250ms ease-in-out;
+}
+.main > span:active {
+  transition: none;
+}
